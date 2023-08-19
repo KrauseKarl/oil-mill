@@ -1,0 +1,67 @@
+{% load static %}
+{% load cache %}
+{% load i18n %}
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html" style="background-image: url(/assets/images/logo/cover.png);">
+
+			  <img id="logo" src="/assets/images/logo/logo_light.svg" width="250px">
+			  <img id="logo_mono" src="/assets/images/logo/mono/cover_brown_dark.svg" width="250px" class="hidden">
+
+<!--			  <img class="" id="logo_sky" src="/assets/images/logo/cover_light_blue.png" width="250px">-->
+<!--			  <img class="hidden" id="logo_forest" src="/assets/images/logo/cover_green.png" width="250px">-->
+<!--			  <img class="hidden" id="logo_wood" src="/assets/images/logo/cover_brown.png" width="250px">-->
+		  </a>
+	      <button class="navbar-toggler"
+				  type="button"
+				  data-toggle="collapse"
+				  data-target="#ftco-nav"
+				  aria-controls="ftco-nav"
+				  aria-expanded="false"
+				  aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span>{% trans 'Меню' %}
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a href="{% url 'shop:main' %}" class="nav-link">{% trans 'Главная' %}
+					</a>
+				</li>
+				<li class="nav-item"><a href="{% url 'shop:about' %}" class="nav-link">{% trans 'O нас' %}</a></li>
+				<li class="nav-item"><a href="{% url 'shop:main' %}#products" class="nav-link">{% trans 'Продукция' %}</a></li>
+				<li class="nav-item"><a href="{% url 'shop:main' %}#contacts" class="nav-link">{% trans 'Контакты' %}</a></li>
+				<li class="nav-item ">
+					<form action="{% url 'set_language' %}" method="post" class="nav-link">
+						{% csrf_token %}
+						<input name="next" type="hidden" value="{{ redirect_to }}"/>
+						{% get_current_language as LANGUAGE_CODE %}
+						{% get_available_languages as LANGUAGES %}
+						{% get_language_info_list for LANGUAGES as languages %}
+						{% get_language_info for LANGUAGE_CODE as lang %}
+<!--						<button class="btn"	type="button" >{{ LANGUAGE_CODE.lang.code }}-->
+<!--						</button>-->
+						{% for lang in languages %}
+
+							<button	class="btn{% if LANGUAGE_CODE == lang.code %} btn-primary {% endif %}"
+									   name="language"
+									   type="submit"
+									   value="{{ lang.code }}">
+								<img src="{% if lang.code == 'en' %}
+								/assets/images/flags/flag-gb-svgrepo-com.svg
+								{% elif lang.code == 'ru' %}
+								/assets/images/flags/flag-ru-svgrepo-com.svg
+								{% elif lang.code == 'kk' %}
+								/assets/images/flags/flag-pw-svgrepo-com.svg
+								{% else %}
+								/assets/images/flags/flag-cn-svgrepo-com.svg
+								{% endif %}" width="20">
+							</button>
+
+						{% endfor %}
+					</form>
+				</li>
+			</ul>
+	      </div>
+	    </div>
+	  </nav>

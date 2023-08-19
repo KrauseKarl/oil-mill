@@ -1,0 +1,150 @@
+{% load i18n %}
+<div class="hero-wrap hero-bread" style="background-image: url('images/bg_1.jpg');">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+            <div class="col-md-7 heading-section ftco-animate text-center">
+                <span class="heading_3">
+                </span>
+                <h2 class="mb-4  heading_2 ">{% trans 'Связаться с нами' %}
+                </h2>
+                <div class="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+<section id="contacts" class="ftco-section contact-section bg-light">
+  <div class="container">
+
+<!--    <div class="row d-flex mb-5 contact-info">-->
+<!--      <div id="ftco-loader" class="show fullscreen">-->
+<!--        <svg class="circular" width="48px" height="48px">-->
+<!--          <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>-->
+<!--          <circle class="path" cx="24" cy="24" r="22" fill="none"-->
+<!--                  stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>-->
+<!--        </svg>-->
+<!--      </div>-->
+<!--    </div>-->
+    <div class="row block-9">
+      <div class="col-md-5 order-md-last d-flex">
+        <form action="#" class="bg-white p-5 contact-form">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="{% trans 'Ваше имя' %}">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="{% trans 'Ваша электронная почта' %}">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Тема">
+          </div>
+          <div class="form-group">
+            <textarea name="" id="" cols="30" rows="7" class="form-control"
+                      placeholder="{% trans 'Хочу обсудить' %} ..."></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="{% trans 'отправить' %}" class="btn btn-primary py-3 px-5">
+          </div>
+        </form>
+
+      </div>
+
+      <div class="col-md-5 d-flex">
+        <div id="map" class="bg-white">
+        </div>
+      </div>
+        <div class="col-md-1  order-md-last d-flex ">
+            <ul class="ftco-footer-social list-unstyled float-md-center float-lft mt-5 ">
+                <li class="ftco-animate ">
+                    <a class="bg-primary p-2" href="#">
+                        <img class="light_social_logo" src="/assets/images/socials/logo-facebook.svg"/>
+                    </a>
+                </li>
+                <li class="ftco-animate ">
+                    <a class="bg-primary p-2" href="#">
+                        <img class="light_social_logo" src="/assets/images/socials/logo-instagram.svg"/>
+                    </a>
+                </li>
+                <li class="ftco-animate ">
+                    <a class="bg-primary p-2" href="#">
+                        <img class="light_social_logo" src="/assets/images/socials/logo-skype.svg"/>
+                    </a>
+                </li>
+                <li class="ftco-animate ">
+                    <a class="bg-primary p-2" href="#">
+                        <img class="light_social_logo" src="/assets/images/socials/logo-twitter.svg"/>
+                    </a>
+                </li>
+                <li class="ftco-animate ">
+                    <a class="bg-primary p-2" href="#">
+                        <img class="light_social_logo" src="/assets/images/socials/logo-vk.svg"/>
+                    </a>
+                </li>
+                <li class="ftco-animate ">
+                    <a class="bg-primary p-2" href="#">
+                        <img class="light_social_logo" src="/assets/images/socials/logo-wechat.svg"/>
+                    </a>
+                </li>
+                <li class="ftco-animate ">
+                    <a class="bg-primary p-2" href="#">
+                        <img class="light_social_logo" src="/assets/images/socials/logo-youtube.svg"/>
+                    </a>
+                </li>
+                <li class="ftco-animate ">
+                    <a class="bg-primary p-2" href="#">
+                        <img class="light_social_logo" src="/assets/images/socials/logo-whatsapp.svg"/>
+                    </a>
+                </li>
+                <li class="ftco-animate ">
+                    <a class="bg-primary p-2" href="#">
+                        <img class="light_social_logo" src="/assets/images/socials/logo-viber.svg"/>
+                    </a>
+                </li>
+                <li class="ftco-animate ">
+                    <a class="bg-primary p-2" href="#">
+                        <img class="light_social_logo" src="/assets/images/socials/logo-telegram.svg"/>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+  </div>
+
+</section>
+<script>
+let map;
+
+async function initMap() {
+  // The location of Uluru
+  const position = { lat: -25.344, lng: 131.031 };
+  // Request needed libraries.
+  //@ts-ignore
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerView } = await google.maps.importLibrary("marker");
+
+  // The map, centered at Uluru
+  map = new Map(document.getElementById("map"), {
+    zoom: 4,
+    center: position,
+    mapId: "DEMO_MAP_ID",
+  });
+
+  // The marker, positioned at Uluru
+  const marker = new AdvancedMarkerView({
+    map: map,
+    position: position,
+    title: "Uluru",
+  });
+}
+
+initMap();
+
+</script>
+
+<!--
+ @license
+ Copyright 2019 Google LLC. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+-->
+
+

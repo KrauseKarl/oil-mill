@@ -1,0 +1,265 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-18 01:59+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\core\settings.py:123
+msgid "English"
+msgstr "English"
+
+#: .\core\settings.py:124
+msgid "Russian"
+msgstr "Russian"
+
+#: .\shop\templates\about.html:99
+msgid "Oil Mill компания 21 века"
+msgstr "Oil Mill is company of the 21st century"
+
+#: .\shop\templates\about.html:103
+msgid ""
+"<b>Oil Mill</b> было основано в <b>2020</b> году.\n"
+"                        В конце <b>мая 2022</b> года\n"
+"                        Компания осуществила технический запуск и в данный "
+"момент\n"
+"                        проводит отлаживание и\n"
+"                        настройку оборудования маслоэкстракционного завода."
+msgstr ""
+
+#: .\shop\templates\about.html:109
+msgid ""
+"В <b>апреле 2023 </b>\n"
+"                        года было принято решение сформировать зону по "
+"выращиванию сырья\n"
+"                        (семян подсолнечника), в результате чего была "
+"оформлена аренда земли\n"
+"                        сельскохозяйственного назначения в количестве <b>43 "
+"000 </b>га,\n"
+"                        а уже в <b>мае 2023</b> года был начат посев,\n"
+"                        исходя из севооборота семян подсолнечника."
+msgstr ""
+
+#: .\shop\templates\about.html:116
+msgid ""
+"К <b>осени 2024</b>\n"
+"                        года Компания \"Oil Mill\" планирует сформировать "
+"земельный банк в размере\n"
+"                        <b>100 000</b>га."
+msgstr ""
+
+#: .\shop\templates\about.html:200 .\shop\templates\about.html:210
+#: .\shop\templates\about.html:232 .\shop\templates\index.html:129
+#: .\shop\templates\index.html:139 .\shop\templates\index.html:159
+msgid "тонн/сутки"
+msgstr "tons/day"
+
+#: .\shop\templates\about.html:201 .\shop\templates\index.html:130
+msgid "Переработка"
+msgstr "processing"
+
+#: .\shop\templates\about.html:211
+msgid "ПРОИЗВОДСТВО"
+msgstr "production"
+
+#: .\shop\templates\about.html:222 .\shop\templates\index.html:149
+msgid "тонн/мес"
+msgstr "tons/month"
+
+#: .\shop\templates\about.html:223
+msgid "ОТГРУЗКА"
+msgstr "shipment"
+
+#: .\shop\templates\about.html:233
+msgid "ПРИЕМКА <br>СЫРЬЯ"
+msgstr "receiving <br>feedstock"
+
+#: .\shop\templates\contacts.html:8 .\shop\templates\footer.html:48
+msgid "Связаться с нами"
+msgstr "Contact us"
+
+#: .\shop\templates\contacts.html:32
+msgid "Ваше имя"
+msgstr "Your name"
+
+#: .\shop\templates\contacts.html:35
+msgid "Ваша электронная почта"
+msgstr "Your email"
+
+#: .\shop\templates\contacts.html:42
+msgid "Хочу обсудить"
+msgstr "I want to discuss"
+
+#: .\shop\templates\contacts.html:45
+msgid "отправить"
+msgstr "send"
+
+#: .\shop\templates\customers.html:7
+#, fuzzy, python-format
+#| msgid "Продукция нашего завода"
+msgid "92%% продукции отгруженно в срок"
+msgstr "Our products"
+
+#: .\shop\templates\customers.html:9
+msgid "Отзывы наших клиентов"
+msgstr "Feedback from our customers"
+
+#: .\shop\templates\footer.html:17
+msgid ""
+"Завод по выпуску растительных масел, изготавливаемых из подсолнечника, льна "
+"или рапса методом экстрагирования."
+msgstr "Plant for the production of vegetable oils,"
+"made from sunflower,"
+"flax or rapeseed by extraction."
+
+#: .\shop\templates\footer.html:43 .\shop\templates\navbar.html:21
+msgid "Меню"
+msgstr "Menu"
+
+#: .\shop\templates\footer.html:45 .\shop\templates\navbar.html:31
+msgid "Продукция"
+msgstr "Products"
+
+#: .\shop\templates\footer.html:46
+msgid "О нас"
+msgstr "About us"
+
+#: .\shop\templates\footer.html:47
+msgid "Закупка"
+msgstr "Procurement"
+
+#: .\shop\templates\footer.html:54
+msgid "Документация"
+msgstr "Documentation"
+
+#: .\shop\templates\footer.html:57
+msgid "Условия доставки"
+msgstr "Shipping Information"
+
+#: .\shop\templates\footer.html:58
+msgid "Сертификаты"
+msgstr "Certificates"
+
+#: .\shop\templates\footer.html:59
+msgid "Правила и условия"
+msgstr "Terms & Conditions"
+
+#: .\shop\templates\footer.html:60
+msgid "Конфиденциальность"
+msgstr "Privacy Policy"
+
+#: .\shop\templates\footer.html:64
+msgid "Работать у нас"
+msgstr "Vacancies"
+
+#: .\shop\templates\footer.html:71 .\shop\templates\navbar.html:32
+msgid "Контакты"
+msgstr "Contacts"
+
+#: .\shop\templates\footer.html:89
+msgid "Казахстан"
+msgstr "Kazakhstan"
+
+#: .\shop\templates\footer.html:90 .\shop\templates\index.html:71
+msgid "г. Астана"
+msgstr "Astana city"
+
+#: .\shop\templates\footer.html:91 .\shop\templates\index.html:71
+msgid "ул. Промышленная, зд.1"
+msgstr "Promyshlennaya str, bld.1"
+
+#: .\shop\templates\footer.html:105
+msgid "Все права защищины"
+msgstr "All rights reserved "
+
+#: .\shop\templates\index.html:92 .\shop\templates\index.html:109
+msgid "Производство и продажа масла"
+msgstr "Production and sale of oil"
+
+#: .\shop\templates\index.html:94 .\shop\templates\index.html:111
+msgid "приемка и переработка семени подсолничника, льна и рапса"
+msgstr "receiving and processing of sunflower seed, flax and rapeseed"
+
+#: .\shop\templates\index.html:140
+msgid "производство"
+msgstr "production"
+
+#: .\shop\templates\index.html:150
+msgid "Отгрузка"
+msgstr "Shipment"
+
+#: .\shop\templates\index.html:160
+msgid "приемка <br>сырья"
+msgstr "receiving<br>raw materials"
+
+#: .\shop\templates\index.html:193 .\shop\templates\products.html:22
+msgid "шрот"
+msgstr "oil meal"
+
+#: .\shop\templates\navbar.html:27
+msgid "Главная"
+msgstr "Main"
+
+#: .\shop\templates\navbar.html:30
+msgid "O нас"
+msgstr "About us"
+
+#: .\shop\templates\partners.html:8
+msgid "Наши партнеры"
+msgstr "Partners"
+
+#: .\shop\templates\products.html:7
+msgid "Продукция нашего завода"
+msgstr "Our products"
+
+#: .\shop\templates\products.html:34 .\shop\templates\products.html:61
+#: .\shop\templates\products.html:84 .\shop\templates\products.html:107
+msgid "подробнее"
+msgstr "detail"
+
+#: .\shop\templates\products.html:50
+msgid "Лузга подсолнечника"
+msgstr "Sunflower husk"
+
+#: .\shop\templates\products.html:75
+msgid "Масло подсолнечное"
+msgstr "Sunflower oil"
+
+#: .\shop\templates\products.html:98
+msgid "Рапсовый шрот"
+msgstr "Rapeseed meal"
+
+#~ msgid "Адресс"
+#~ msgstr "Address"
+
+#, fuzzy
+#~ msgid "<br>010000, Казахстан, <br>г. Астана, <br>ул.Промышленная, зд.1"
+#~ msgstr "<br>010000, Kazakhstan, <br>Astana city, <br>Promyshlennaya str, bld.1"
+
+#~ msgid "Телефон"
+#~ msgstr "Telephone"
+
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgid "Website"
+#~ msgstr "Website"
+
+#~ msgid "Kazakh"
+#~ msgstr "Kazakh"
+
+#~ msgid "Chinese"
+#~ msgstr "Chinese"
