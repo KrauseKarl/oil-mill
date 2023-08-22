@@ -10092,3 +10092,54 @@ textarea.form-control {
 .light_social_logo {
     filter: invert(100%) sepia(33%) saturate(2%) hue-rotate(102deg) brightness(115%) contrast(100%);
 }
+
+.fixed-bottom-bar {
+    background-color: var(--main-color);
+    border-radius: 8px;
+    bottom: 29px;
+<!--			border: 10px solid var(&#45;&#45;main-color);-->
+    height: 0;
+    width:75%;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    bottom: 5%;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, 0);
+
+    z-index: 1700;
+    padding : 5px;
+    -webkit-box-shadow: 10px 10px 15px 3px rgba(116, 121, 125, 0.6);
+    -moz-box-shadow: 10px 10px 15px 3px rgba(116, 121, 125, 0.6);
+    box-shadow: 10px 10px 15px 3px rgba(116, 121, 125, 0.6);
+}
+.color-button {
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: #9CD124;
+    margin-right:10px;
+    padding: 20px;
+}
+
+.icon-button {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(0,0,0,0.3);
+    margin-right:10px;
+    padding: 5px;
+}
+.logo_white {
+    filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(139deg) brightness(112%) contrast(101%);
+}
+
+.logo_black {
+    filter: invert(0%) sepia(0%) saturate(6%) hue-rotate(169deg) brightness(96%) contrast(104%);
+}
+
+

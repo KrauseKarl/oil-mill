@@ -26,7 +26,7 @@
 <!--      </div>-->
 <!--    </div>-->
     <div class="row block-9">
-      <div class="col-md-5 order-md-last d-flex">
+        <div class="col-md-5 order-md-last d-flex">
         <form action="#" class="bg-white p-5 contact-form">
           <div class="form-group">
             <input type="text" class="form-control" placeholder="{% trans 'Ваше имя' %}">
@@ -47,12 +47,48 @@
         </form>
 
       </div>
+        <div class="col-md-6 d-flex">
+          <div class="mapouter bg-white">
+            <div class="gmap_canvas" >
+                <iframe width="100%" height="100%" id="gmap_canvas"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10008.932890556664!2d71.42040061950686!3d51.15948960281525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424586c58884bee3%3A0x3c695a5bf1c2492b!2sCentral%20Park!5e0!3m2!1sen!2sru!4v1692474869519!5m2!1sen!2sru"
+                        frameborder="0"
+                        scrolling="no"
+                        marginheight="0"
+                        marginwidth="0"></iframe>
+                <br>
 
-      <div class="col-md-5 d-flex">
-        <div id="map" class="bg-white">
+                <style>
+                    .mapouter {
+                        position: relative;
+                        text-align: right;
+                        height: 400px;
+                        width: 100%;
+                        }
+                </style>
+
+                <a href="https://www.embedgooglemap.net"></a>
+
+                <style>
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        height: 450px;
+                        width: 100%;
+                        }
+                </style>
+            </div>
         </div>
-      </div>
-        <div class="col-md-1  order-md-last d-flex ">
+
+
+        <!--<div id="map" class="bg-white">-->
+            <!--<div class="bg-white">-->
+            <!--<div id="map_container" class="map container-fluid">-->
+            <!--<script id="ymap_lazy" async="" data-src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1ad4887964fc2e0a6f07c6246ffe638b138f8baacc8983f9a6a0f401a02e833a&width=1280&height=400&lang=ru_RU&scroll=true"></script>-->
+            <!--</div>-->
+            <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10008.932890556664!2d71.42040061950686!3d51.15948960281525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424586c58884bee3%3A0x3c695a5bf1c2492b!2sCentral%20Park!5e0!3m2!1sen!2sru!4v1692474869519!5m2!1sen!2sru" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+        </div>
+        <div class="col-md-1  order-md-first d-flex mt-2">
             <ul class="ftco-footer-social list-unstyled float-md-center float-lft mt-5 ">
                 <li class="ftco-animate ">
                     <a class="bg-primary p-2" href="#">
@@ -111,40 +147,29 @@
   </div>
 
 </section>
+
+
 <script>
-let map;
+    let map_container = document.getElementById('map_container');
+    let options_map = {
+        once: true,//запуск один раз, и удаление наблюдателя сразу
+        passive: true,
+        capture: true
+    };
+    map_container.addEventListener('click', start_lazy_map, options_map);
+    map_container.addEventListener('mouseover', start_lazy_map, options_map);
+    map_container.addEventListener('touchstart', start_lazy_map, options_map);
+    map_container.addEventListener('touchmove', start_lazy_map, options_map);
 
-async function initMap() {
-  // The location of Uluru
-  const position = { lat: -25.344, lng: 131.031 };
-  // Request needed libraries.
-  //@ts-ignore
-  const { Map } = await google.maps.importLibrary("maps");
-  const { AdvancedMarkerView } = await google.maps.importLibrary("marker");
-
-  // The map, centered at Uluru
-  map = new Map(document.getElementById("map"), {
-    zoom: 4,
-    center: position,
-    mapId: "DEMO_MAP_ID",
-  });
-
-  // The marker, positioned at Uluru
-  const marker = new AdvancedMarkerView({
-    map: map,
-    position: position,
-    title: "Uluru",
-  });
-}
-
-initMap();
-
+    let map_loaded = false;
+    function start_lazy_map() {
+        if (!map_loaded) {
+            let map_block = document.getElementById('ymap_lazy');
+            map_loaded = true;
+            map_block.setAttribute('src', map_block.getAttribute('data-src'));
+            map_block.removeAttribute('data_src');
+            console.log('YMAP LOADED');
+        }
+    }
 </script>
-
-<!--
- @license
- Copyright 2019 Google LLC. All Rights Reserved.
- SPDX-License-Identifier: Apache-2.0
--->
-
-
+</div>

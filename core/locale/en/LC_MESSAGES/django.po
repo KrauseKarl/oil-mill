@@ -175,7 +175,7 @@ msgstr "Kazakhstan"
 
 #: .\shop\templates\footer.html:90 .\shop\templates\index.html:71
 msgid "г. Астана"
-msgstr "Astana city"
+msgstr "Astana"
 
 #: .\shop\templates\footer.html:91 .\shop\templates\index.html:71
 msgid "ул. Промышленная, зд.1"
@@ -247,7 +247,7 @@ msgstr "Rapeseed meal"
 
 #, fuzzy
 #~ msgid "<br>010000, Казахстан, <br>г. Астана, <br>ул.Промышленная, зд.1"
-#~ msgstr "<br>010000, Kazakhstan, <br>Astana city, <br>Promyshlennaya str, bld.1"
+#~ msgstr "<br>010000, Kazakhstan, <br>Astana, <br>Promyshlennaya str, bld.1"
 
 #~ msgid "Телефон"
 #~ msgstr "Telephone"
